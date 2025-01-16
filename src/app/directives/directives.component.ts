@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class DirectivesComponent {
 
+    isTrue: boolean = false;
+    show: boolean = true;
+
+    items: string[] = ['Angular', 'React', 'Vue', 'Ember', 'Backbone'];
+
+    viewMode:string = 'list';
 }

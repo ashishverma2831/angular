@@ -8,6 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { FormsModule } from '@angular/forms';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { CustomDirective } from './directives/custom.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DirectivesComponent } from './directives/directives.component';
     HomeComponent,
     AboutComponent,
     DataBindingComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    CustomDirective
   ],
   imports: [
     BrowserModule,
