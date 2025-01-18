@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostBinding } from '@angular/core';
+import { Directive, ElementRef, HostBinding, HostListener } from '@angular/core';
 
 @Directive({
   selector: '[appCustom]'
@@ -9,6 +9,10 @@ export class CustomDirective {
 
   constructor(public eRef:ElementRef) {
     this.eRef.nativeElement.style.backgroundColor = 'yellow';
+  }
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.backgroundColor = 'green';
   }
 
 }

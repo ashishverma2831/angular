@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { CustomDirective } from './directives/custom.directive';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CustomDirective } from './directives/custom.directive';
     AboutComponent,
     DataBindingComponent,
     DirectivesComponent,
-    CustomDirective
+    CustomDirective,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
