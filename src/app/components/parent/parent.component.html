@@ -1,0 +1,7 @@
+<p>parent works!</p>
+<hr>
+
+<!-- <app-child [childMessage]="parentMessage" ></app-child> -->
+
+<p>Message from child : {{receivedDataFromChild}}</p>
+<app-child (messageToParent)="receiveMessage($event)" ></app-child>

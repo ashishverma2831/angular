@@ -11,6 +11,8 @@ import { DirectivesComponent } from './directives/directives.component';
 import { CustomDirective } from './directives/custom.directive';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsComponent } from './forms/forms.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { FormsComponent } from './forms/forms.component';
     DirectivesComponent,
     CustomDirective,
     ContactComponent,
-    FormsComponent
+    FormsComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

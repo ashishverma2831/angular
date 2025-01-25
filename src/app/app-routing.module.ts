@@ -4,6 +4,8 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsComponent } from './forms/forms.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -13,7 +15,9 @@ const routes: Routes = [
     {path:'home',component:HomeComponent},
     {path:'about',component:AboutComponent},
   ]},
-  {path:'forms',component:FormsComponent}
+  {path:'forms',component:FormsComponent},
+  {path:'parent',component:ParentComponent},
+  {path:'child',component:ChildComponent}
 ];
 
 @NgModule({
